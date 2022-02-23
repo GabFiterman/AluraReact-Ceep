@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
+import ListaDeNotas from './components/ListaDeNotas';
+import FormularioCadastro from './components/FormularioCadastro';
 
-function App() {
-  return (
-    <h1>Meu app react</h1>
-  );
+class App extends Component {
+  render() {
+    return (
+      <section>
+        <FormularioCadastro />
+        <ListaDeNotas />
+      </section>
+    );
+  }
+
 }
-
+export default App;
 //react -> lib para renderização da interface gráfica
 //React -> ecossistema
-
-export default App;
